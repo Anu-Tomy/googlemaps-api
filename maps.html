@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="keys.js"></script>
+    <script type="text/javascript" src="mapsapi.js"></script>
+    <!--<link rel="stylesheet" href="/maps.css" type="text/css" />-->
+    <title>Google Maps</title>
+    <style>
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <!--content of keys.js is 
+    var urlTag =
+"<script async defer src='https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&v=3&callback=initMap'></script>"-->
+    <script>
+      document.write(urlTag);
+    </script>
+
+  </body>
+</html>
